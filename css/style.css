@@ -1,0 +1,121 @@
+/* Custom Stylesheet */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Button Overide */
+.btn-warning {
+  border-radius: 0;
+  font-size: 14px;
+}
+
+/* Hero */
+#hero {
+  background: url(../img/night-sky.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -70px;
+  position: relative;
+  z-index: -50;
+}
+
+#hero > h1 {
+  color: #fff;
+  margin-top: -30px;
+}
+
+/* Icon Row */
+#iconRow {
+  padding: 60px 0;
+}
+
+/* Pics */
+#pics > #cliff, #waterBottle {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  color: #fff;
+}
+
+#pics > #cliff {
+  background: url('../img/cliff.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  height: 450px;
+}
+
+#pics > #waterBottle {
+  background: url('../img/water-bottle.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  height: 450px;
+}
+
+#pics .overlay {
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Navagation Menu */
+.custom-navagation {
+  background: transparent;
+  height: 75px;
+  width: 100%;
+  z-index: 99999999;
+}
+
+.custom-navagation #logo {
+  color: #fff;
+  padding: 20px 0px 0px 25px;
+  font-size: 24px;
+}
+
+.custom-navagation #links,#logo {
+  display: inline-block;
+}
+
+.custom-navagation #links {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 25px 0 0;
+}
+
+.custom-navagation #links > li {
+  display: inline-block;
+  color: #fff;
+  padding-right: 25px;
+}
+
+/* Footer */
+#footer {
+  background: black;
+  padding: 30px;
+}

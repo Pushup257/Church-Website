@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Font Awsome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- Navagation -->
+    <nav class="custom-navagation">
+      <div id="logo">Company Logo</div>
+      <ul id="links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <div id="hero">
+      <h1>Welcome To My Website</h1>
+      <button type="button" class="btn btn-warning">Learn More</button>
+    </div>
+
+    <!-- Icon Row -->
+    <div class="container">
+      <div id="iconRow" class="row text-center">
+        <div class="col-md-4">
+          <i class="fa fa-calendar fa-5x" aria-hidden="true"></i>
+          <h2>Headline</h2>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i>
+          <h2>Headline</h2>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-comments-o fa-5x" aria-hidden="true"></i>
+          <h2>Headline</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- SlideShow -->
+    <h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="http://www.imagefully.com/wp-content/uploads/2015/07/White-Dog-Cute-Pictue-Share-On-Whats-app.jpg" style="width:100%">
+  <img class="mySlides" src="https://media-cdn.tripadvisor.com/media/photo-s/09/c7/2c/ea/aphrodite-s-rock.jpg" style="width:100%">
+  <img class="mySlides" src="https://media-cdn.tripadvisor.com/media/photo-s/0e/5e/bb/ce/pictue-from-the-resort.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+
+    <!-- Pics -->
+    <div id="pics">
+      <div id="cliff">
+        <div class="overlay">
+          <ul>
+            <li>Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+            <li>Step 4</li>
+          </ul>
+        </div>
+      </div>
+      <div id="waterBottle">
+        <div class="overlay">
+          <ul>
+            <li>Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+            <li>Step 4</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+       <div id="footer" class="container-fluid">
+         <div class="row">
+
+         </div>
+       </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
